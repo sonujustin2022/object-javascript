@@ -5,10 +5,16 @@ let student = {
     attendence:56
 }
 
+//printing all the keys in the function
 
-// console.log(student);
+// for(let key in student){
+//     console.log(key)
+// }
 
-//print a specific keyvalue 
+
+console.log(student);
+
+// print a specific keyvalue 
 
 console.log(student.name);
 
