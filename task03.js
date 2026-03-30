@@ -13,14 +13,14 @@ let secondObj = {};
 
 
 strArr.forEach(eachEl=>{
-    if(Object.hasOwn(wordCount,eachEl)){
+        if(Object.hasOwn(wordCount,eachEl)){
         secondObj[eachEl]=1;
     }else{
         wordCount[eachEl] = 1;
     }
 })
 
-let duplicate = Object.values(secondObj);
+let duplicate = Object.keys(secondObj);
 console.log(duplicate);
 
 
