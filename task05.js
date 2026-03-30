@@ -12,3 +12,27 @@ const weatherData = [
 // {thrissur:32,Thiruvananthapuram:33,Kozhikode:31,}
 
 // print district with its highest temperature
+
+let highestTemp = {};
+
+weatherData.forEach((eachTemp)=>{
+    let currDis = eachTemp.district;
+    let currTemp = eachTemp.temp;
+    
+    if(Object.hasOwn(highestTemp,currDis)){
+        if(currTemp>highestTemp[currDis]){
+            highestTemp[currDis] = currTemp;
+        }
+
+    }else {
+        highestTemp[currDis] = currTemp;
+    }
+});
+
+// console.log(highestTemp);
+
+
+// // to print the highest temp among this
+
+// let highestTempArr  = Object.entries(highestTemp);
+// console.log(highestTempArr);
