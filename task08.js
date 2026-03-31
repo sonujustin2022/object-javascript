@@ -47,11 +47,14 @@ const products = [
 
 // sort mobile based on price - sort
 
-let sortedPrice = products.sort((sm,lg)=>sm.price-lg.price);
-console.log(sortedPrice);
+// let sortedPrice = products.sort((sm,lg)=>sm.price-lg.price);
+// console.log(sortedPrice);
 
 
 // print costly mobile price
+
+let costlyProduct = products.reduce((accu,curr)=>accu.price>curr.price?accu:curr);
+console.log(costlyProduct);
 
 
 // print low cost mobile
