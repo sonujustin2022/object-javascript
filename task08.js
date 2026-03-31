@@ -53,8 +53,11 @@ const products = [
 
 // print costly mobile price
 
-let costlyProduct = products.reduce((accu,curr)=>accu.price>curr.price?accu:curr);
-console.log(costlyProduct);
+// let costlyProduct = products.reduce((accu,curr)=>accu.price>curr.price?accu:curr);
+// console.log(costlyProduct);
 
 
 // print low cost mobile
+
+ let lowCostProduct = products.reduce((accu,curr)=>accu.price<curr.price?accu:curr);
+console.log(lowCostProduct);
