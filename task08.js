@@ -20,20 +20,38 @@ const products = [
 
 // print product name only -
 
+//  products.forEach((eachProd)=>{
+//     console.log(eachProd.pName);
+//  });
+
+
 // print all mobile details whose display is oled :
 
+// products.forEach((eachProd)=>{
+//     if(eachProd.display == "OLED"){
+//         console.log(eachProd);
+//     }
+// })
 
-console.log(`-------------------------------`);
+
+
+
 // print 3g mobile phone names :
 
+// products.forEach(eachProd=>{
+//     if(eachProd.brand == "3G"){
+//         console.log(eachProd);
+//     }
+// })
 
-console.log(`-------------------------------`);
+
 // sort mobile based on price - sort
 
+let sortedPrice = products.sort((sm,lg)=>sm.price-lg.price);
+console.log(sortedPrice);
 
-console.log(`-------------------------------`);
+
 // print costly mobile price
 
 
 // print low cost mobile
-console.log(`-------------------------------`);
